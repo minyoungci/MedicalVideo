@@ -11,6 +11,7 @@
 - 물리적인 위치라 실제 위치와 다름 
 - 실제 voxel spacing을 이용해서 변환해줌.
 	- phys_coords = origin + voxel_spacing * voxel_coord
+
 ![Screenshot from 2024-01-30 16-33-14](https://github.com/minyoungci/MedicalVideo/assets/80457917/9b8c2100-34f1-4d27-ab93-0a09c5959d8c)
 
 #### Look Up Table(LUT)
@@ -23,5 +24,21 @@
 
 #### Histogram equalization
 - 각 영상마다 pixel값의 분포를 넓게 해주면서 밝기를 변화시켜줌.
-- ![Screenshot from 2024-01-30 16-35-31](https://github.com/minyoungci/MedicalVideo/assets/80457917/c621ea20-fb0f-4ec7-bd7f-8b21a1735baf)
+ ![Screenshot from 2024-01-30 16-35-31](https://github.com/minyoungci/MedicalVideo/assets/80457917/c621ea20-fb0f-4ec7-bd7f-8b21a1735baf)
 
+### Neuroimaging Informatics Technology Initiative(NIFTI)
+
+![Screenshot from 2024-01-29 15-18-05](https://github.com/minyoungci/MedicalVideo/assets/80457917/8860e27a-f7be-44ac-83fd-7dcac7552edd)
+
+- Purpose
+	- DICOM 이미지의 경우 2D slice 단위로 저장된다.
+	- 3D 이미지를 조금 더 용이하게 저장하기 위해서 사용하는 Format
+
+* What it Use:
+	* Neroimage(MRI)를 저장하는 용도로 사용된다.
+	* NIFTI는 NIH(National Institutes of Health in the USA)에서 나오게 되었다. 
+	* 표준화된 방법으로 4차원 도메인까지 벡터값을 저장할 수 있다. 
+
+- Nifti type 
+	- Nifti-1 : 256까지 표현할 수 있다. (8 bit)
+	- Nifti-2 : 64 bit까지 표현할 수 있다. 
